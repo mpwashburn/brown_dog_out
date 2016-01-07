@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'profile' => 'static_pages#profile'
   get 'explore' => 'static_pages#explore'
   get 'results' => 'static_pages#results'
-  get 'contact' => 'static_pages#contact'
+  get 'settings' => 'static_pages#settings'
   get 'signup' =>  'users#new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
