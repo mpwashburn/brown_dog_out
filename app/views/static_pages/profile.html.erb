@@ -1,3 +1,24 @@
 <% provide(:title, "Profile") %>
 <h1>Profile</h1>
-<p>This page will be the users profile where they will be able to create new posts, see their favorites, and see a list of their posts.</p>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@post) do |f| %>
+
+      <%= f.label :loc_name %>
+      <%= f.text_field :loc_name, class: 'form-control' %>
+
+      <%= f.label :city %>
+      <%= f.email_field :city, class: 'form-control' %>
+
+      <%= f.label :comment %>
+      <%= f.password_field :comment, class: 'form-control' %>
+
+      <%= f.submit "Submit Post", class: "btn btn-primary" %>
+
+      <% f.hidden_text_field :user_id, @user.id %>
+    <% end %>
+  </div>
+</div>
+
+
+
