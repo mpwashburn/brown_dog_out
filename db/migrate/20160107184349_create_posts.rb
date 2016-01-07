@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :loc_name
       t.string :city
       t.text :comment
-      t.reference :user
+      t.references :user
 
       t.timestamps null: false
     end
