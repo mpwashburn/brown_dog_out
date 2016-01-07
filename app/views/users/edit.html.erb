@@ -20,8 +20,8 @@
 
       <%= f.submit "Save changes", class: "btn btn-primary" %>
 
-      <%= f.submit "Delete Profile", class: "btn btn-primary" %>
     <% end %>
+      <%= button_to "Delete Profile", user_path(@user), :method => "delete", class: "btn btn-block btn-primary" %>
 
     <div class="gravatar_edit">
       <%= gravatar_for @user %>
