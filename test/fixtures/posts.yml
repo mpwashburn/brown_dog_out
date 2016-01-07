@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  loc_name: MyString
+  city: MyString
+  comment: MyText
+  user: 
+
+two:
+  loc_name: MyString
+  city: MyString
+  comment: MyText
+  user: 
