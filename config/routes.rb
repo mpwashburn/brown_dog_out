@@ -2,9 +2,7 @@ Rails.application.routes.draw do
 
   get 'posts/new'
 
-  #get 'sessions/new'
-
-  root     '/'   =>     'static_pages#home'
+  root          'static_pages#home'
   get 'profile' => 'static_pages#profile'
   get 'explore' => 'static_pages#explore'
   get 'results' => 'static_pages#results'
