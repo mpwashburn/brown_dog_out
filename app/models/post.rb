@@ -7,6 +7,6 @@ class Post < ActiveRecord::Base
   end
 
   has_many :likes
-  has_many :users, though: :likes
+  has_many :users, through: :likes
 
 end
