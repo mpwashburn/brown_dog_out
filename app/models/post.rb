@@ -6,4 +6,7 @@ class Post < ActiveRecord::Base
     @userPost = attributes[:user]
   end
 
+  has_many :likes
+  has_many :users, though: :likes
+
 end
